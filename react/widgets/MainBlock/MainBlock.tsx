@@ -1,8 +1,20 @@
+import Tagline from "@/react/components/Tagline/Tagline"
+import Typography from "@/react/components/Typography/Typography"
+
 export default function MainBlock() {
   return (
     <div>
       <div>
         <div className="relative flex flex-col h-dvh">
+          <div className="fixed flex justify-center z-[1] top-[25%] w-full items-center">
+            <div className="flex flex-col gap-2">
+              <Tagline text="Hi!" />
+              <Typography tag="h1" className="max-w-[950px]">
+                I’m Maryna danilkina,
+                <br /> a Front-End Developer
+              </Typography>
+            </div>
+          </div>
           <img
             src="webp/sky.webp"
             alt="sky"
