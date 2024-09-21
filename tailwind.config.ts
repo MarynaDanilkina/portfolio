@@ -25,6 +25,10 @@ const config: Config = {
         xs: "500px",
         sm: "768px",
         sl: "990px",
+        md: "1440px",
+      },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(135deg, #0b1d26, transparent 87%)",
       },
     },
   },

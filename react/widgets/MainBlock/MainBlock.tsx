@@ -18,8 +18,9 @@ export default function MainBlock() {
             alt="hill"
             className="absolute inset-x-0 bottom-0 top-[55%] sm:top-[45%] sl:top-[60%] z-50 object-[30%_50%] xs:object-[50%_0%] w-full h-[600px] sm:h-auto object-cover"
           />
-          <div className="gradient-hero absolute inset-0 w-full h-dvh opacity-60 bg-gradient-to-tr from-[#0b1d26] to-transparent"></div>
+          <div className="gradient-hero absolute inset-0 w-full h-dvh opacity-60 bg-custom-gradient"></div>
         </div>
+        <div className="h-[5000px]"></div>
       </div>
     </div>
   )
