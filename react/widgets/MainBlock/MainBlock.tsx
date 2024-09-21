@@ -1,13 +1,32 @@
 import Tagline from "@/react/components/Tagline/Tagline"
 import Typography from "@/react/components/Typography/Typography"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import { useEffect, useRef } from "react"
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function MainBlock() {
+  const blockRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    gsap.to(blockRef.current, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: blockRef.current,
+        start: "0px",
+        end: "500px",
+        scrub: true,
+      },
+    })
+  }, [])
+
   return (
     <div>
       <div>
         <div className="relative flex flex-col h-dvh">
-          <div className="fixed flex justify-center z-[1] top-[25%] w-full items-center">
-            <div className="flex flex-col gap-2">
+          <div className="fixed flex justify-center z-[1] top-[25%] w-full items-center max-w-[1920px]">
+            <div className="flex flex-col gap-2" ref={blockRef}>
               <Tagline text="Hi!" />
               <Typography tag="h1" className="max-w-[950px]">
                 I’m Maryna danilkina,
