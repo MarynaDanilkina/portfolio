@@ -6,7 +6,7 @@ import Typography from "../Typography/Typography"
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-[100] w-full bg-white bg-opacity-10 backdrop-blur shadow-2xl px-16 py-5">
+    <header className="fixed top-0 z-[100] w-full bg-white bg-opacity-10 backdrop-blur shadow-2xl max-w-[1920px] mx-auto my-0 px-16 py-5">
       <div className="grid grid-cols-4">
         <div className="">
           <Link href="/" title="Maryna Danilkina">

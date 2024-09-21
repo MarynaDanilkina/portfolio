@@ -12,10 +12,6 @@ const NAVBAR_LINKS = [
     href: "/#technologies",
   },
   {
-    value: "Technologies",
-    href: "/#technologies",
-  },
-  {
     value: "Work",
     href: "/#work",
   },

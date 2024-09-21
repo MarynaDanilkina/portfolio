@@ -21,6 +21,11 @@ const config: Config = {
       letterSpacing: {
         "custom-wide": "0.33em",
       },
+      screens: {
+        xs: "500px",
+        sm: "768px",
+        sl: "990px",
+      },
     },
   },
   plugins: [],

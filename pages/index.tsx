@@ -1,4 +1,5 @@
 import Header from "@/react/components/Header/Header"
+import MainBlock from "@/react/widgets/MainBlock/MainBlock"
 import classNames from "classnames"
 import { Acme, ADLaM_Display, Manrope } from "next/font/google"
 
@@ -33,9 +34,12 @@ export default function Home() {
         manrope.variable,
         acme.variable,
         aDLaM.variable,
-        "flex justify-center items-center h-dvh"
+        "max-w-[1920px] mx-auto my-0"
       )}>
       <Header />
+      <main>
+        <MainBlock />
+      </main>
     </div>
   )
 }
