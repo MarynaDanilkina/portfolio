@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
+  important: true,
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./react/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +26,7 @@ const config: Config = {
         xs: "500px",
         sm: "768px",
         sl: "990px",
+        sll: "1170px",
         md: "1440px",
       },
       backgroundImage: {

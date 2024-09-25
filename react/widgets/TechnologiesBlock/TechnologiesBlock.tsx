@@ -11,7 +11,7 @@ export default function TechnologiesBlock() {
         className="absolute bg-number-gradient top-[84px] xs:top-[75px] sm:top-10 sl:top-[76px] md:top-14 right-32 xs:right-36 sm:right-44 sl:right-64 md:right-80">
         02
       </Typography>
-      <div className="flex flex-col items-end gap-2 z-[1] px-6 xs:px-14 sm:px-24 sl:px-40 md:px-56">
+      <div className="flex flex-col items-end gap-2 z-[1] px-6 xs:px-14 sm:px-24 sl:px-40 md:px-48">
         <Tagline text="What I use" />
         <Typography tag="h3">technologies</Typography>
       </div>

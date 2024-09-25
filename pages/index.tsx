@@ -1,5 +1,6 @@
 import Header from "@/react/components/Header/Header"
 import AboutBlock from "@/react/widgets/AboutBlock/AboutBlock"
+import ExperienceBlock from "@/react/widgets/ExperienceBlock/ExperienceBlock"
 import MainBlock from "@/react/widgets/MainBlock/MainBlock"
 import TechnologiesBlock from "@/react/widgets/TechnologiesBlock/TechnologiesBlock"
 import classNames from "classnames"
@@ -43,6 +44,7 @@ export default function Home() {
         <MainBlock />
         <AboutBlock />
         <TechnologiesBlock />
+        <ExperienceBlock />
       </main>
     </div>
   )

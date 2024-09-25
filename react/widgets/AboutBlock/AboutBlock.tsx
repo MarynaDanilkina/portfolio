@@ -5,7 +5,7 @@ import { easeInOut, motion } from "framer-motion"
 
 export default function AboutBlock() {
   return (
-    <div className="relative flex flex-col z-[50] pt-0 xs:pt-0 sm:pt-0 sl:pt-52 md:pt-52 px-6 xs:px-14 sm:px-24 sl:px-40 md:px-56 gap-5 xs:gap-6 sm:gap-7 sl:gap-8 md:gap-10">
+    <div className="relative flex flex-col z-[50] pt-0 xs:pt-0 sm:pt-0 sl:pt-52 md:pt-52 px-6 xs:px-14 sm:px-24 sl:px-40 md:px-48 gap-5 xs:gap-6 sm:gap-7 sl:gap-8 md:gap-10">
       <Typography
         tag="h2"
         color="text-transparent"
