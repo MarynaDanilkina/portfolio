@@ -6,6 +6,8 @@ const SvgComponent = ({ ...rest }) => (
     width="86"
     height="58"
     fill="none"
+    viewBox="0 0 86 58"
+    preserveAspectRatio="xMidYMid meet"
     {...rest}>
     <g clipPath="url(#clip0_59_189)">
       <g clipPath="url(#clip1_59_189)">

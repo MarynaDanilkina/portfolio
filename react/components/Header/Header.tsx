@@ -77,13 +77,13 @@ export default function Header() {
     <>
       <header
         className={classNames(
-          "fixed top-0 z-[100] w-full bg-white bg-opacity-10 backdrop-blur shadow-2xl max-w-[1920px] mx-auto my-0 px-10 md:px-16 py-2 sl:py-5 transition-header bg-black_1",
+          "fixed top-0 z-[100] w-full bg-white bg-opacity-10 backdrop-blur shadow-2xl max-w-[1920px] mx-auto my-0 px-5 xs:px-7 sm:px-8 sl:px-10 md:px-16 py-2 sl:py-4 transition-header bg-black_1",
           show ? "translate-y-0" : "-translate-y-full"
         )}>
         <div className="grid grid-cols-2 sl:grid-cols-4">
           <div className="">
             <Link href="/" title="Maryna Danilkina">
-              <Logo />
+              <Logo className="w-auto h-7 xs:h-8 sm:h-9 sl:h-11 md:h-16" />
             </Link>
           </div>
           <nav className="hidden sl:flex items-center justify-center col-span-2">

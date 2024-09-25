@@ -31,3 +31,63 @@ img {
 html.scroll-fixed body {
   overflow: hidden;
 }
+.tech-swiper .swiper-wrapper .swiper-slide {
+  width: 230px !important;
+}
+
+.tech-left-swiper .swiper-wrapper .swiper-slide {
+  width: 230px !important;
+  margin-right: 0px !important;
+}
+
+@media (max-width: 990px) {
+  .tech-swiper .swiper-wrapper .swiper-slide {
+    width: 180px !important;
+  }
+
+  .tech-left-swiper .swiper-wrapper .swiper-slide {
+    width: 180px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tech-swiper .swiper-wrapper .swiper-slide {
+    width: 150px !important;
+  }
+
+  .tech-left-swiper .swiper-wrapper .swiper-slide {
+    width: 150px !important;
+    margin-right: 0px !important;
+  }
+}
+
+.tech-swiper .swiper-wrapper,
+.tech-left-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.tech-swiper .swiper-wrapper .swiper-slide,
+.tech-left-swiper .swiper-wrapper .swiper-slide {
+  height: auto !important;
+}
+.border_gradient {
+  position: relative;
+}
+
+.border_gradient::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

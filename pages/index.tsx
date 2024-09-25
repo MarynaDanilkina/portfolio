@@ -1,5 +1,7 @@
 import Header from "@/react/components/Header/Header"
+import AboutBlock from "@/react/widgets/AboutBlock/AboutBlock"
 import MainBlock from "@/react/widgets/MainBlock/MainBlock"
+import TechnologiesBlock from "@/react/widgets/TechnologiesBlock/TechnologiesBlock"
 import classNames from "classnames"
 import { Acme, ADLaM_Display, Manrope } from "next/font/google"
 
@@ -39,6 +41,8 @@ export default function Home() {
       <Header />
       <main>
         <MainBlock />
+        <AboutBlock />
+        <TechnologiesBlock />
       </main>
     </div>
   )
