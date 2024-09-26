@@ -17,10 +17,12 @@ export default function Footer() {
         © 2024 MD. All rights reserved
       </Typography>
       <div className="flex items-center justify-center sm:justify-end gap-4">
-        <Link href="https://www.linkedin.com/in/marynadanilkina/">
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/marynadanilkina/">
           <In />
         </Link>
-        <Link href="https://t.me/Marynadanilkina">
+        <Link target="_blank" href="https://t.me/Marynadanilkina">
           <Tg />
         </Link>
       </div>

@@ -1,6 +1,7 @@
 import Footer from "@/react/components/Footer/Footer"
 import Header from "@/react/components/Header/Header"
 import AboutBlock from "@/react/widgets/AboutBlock/AboutBlock"
+import ConnectionBlock from "@/react/widgets/ConnectionBlock/ConnectionBlock"
 import ExperienceBlock from "@/react/widgets/ExperienceBlock/ExperienceBlock"
 import MainBlock from "@/react/widgets/MainBlock/MainBlock"
 import TechnologiesBlock from "@/react/widgets/TechnologiesBlock/TechnologiesBlock"
@@ -46,6 +47,7 @@ export default function Home() {
         <AboutBlock />
         <TechnologiesBlock />
         <ExperienceBlock />
+        <ConnectionBlock />
       </main>
       <Footer />
     </div>
