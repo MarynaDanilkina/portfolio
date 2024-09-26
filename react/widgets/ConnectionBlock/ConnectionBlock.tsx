@@ -4,7 +4,9 @@ import Tagline from "@/react/components/Tagline/Tagline"
 import TextArea from "@/react/components/TextArea/TextArea"
 import Typography from "@/react/components/Typography/Typography"
 import { contact } from "@/react/data/contact"
+import { variant } from "@/react/data/variant"
 import emailjs from "@emailjs/browser"
+import { easeInOut, motion } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
@@ -66,7 +68,13 @@ export default function ConnectionBlock() {
         <Tagline text="Contact" />
         <Typography tag="h3">Get in touch</Typography>
       </div>
-      <div className="flex flex-col-reverse sl:flex-row justify-between gap-6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8, ease: easeInOut }}
+        viewport={{ once: true }}
+        variants={variant}
+        className="flex flex-col-reverse sl:flex-row justify-between gap-6">
         <form
           className="grid grid-cols-1 md:grid-cols-2 gap-3 xs:gap-3 sl:gap-6 col-span-4 w-full"
           onSubmit={handleSubmit(onSubmit)}>
@@ -114,7 +122,7 @@ export default function ConnectionBlock() {
             </Link>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

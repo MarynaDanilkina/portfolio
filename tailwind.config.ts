@@ -32,7 +32,7 @@ const config: Config = {
       backgroundImage: {
         "custom-gradient": "linear-gradient(135deg, #0b1d26, transparent 87%)",
         "number-gradient":
-          "linear-gradient(134deg, #fff 0%, #366977 56%, #0b1d26 100%);",
+          "linear-gradient(134deg, #fff 0%, #366977 56%, #0b1d26 100%)",
       },
     },
   },
