@@ -81,11 +81,9 @@ export default function Header() {
           show ? "translate-y-0" : "-translate-y-full"
         )}>
         <div className="grid grid-cols-2 sl:grid-cols-4">
-          <div className="">
-            <Link href="/" title="Maryna Danilkina">
-              <Logo className="w-auto h-7 xs:h-8 sm:h-9 sl:h-11 md:h-16" />
-            </Link>
-          </div>
+          <Link href="/" title="Maryna Danilkina">
+            <Logo className="w-auto h-7 xs:h-8 sm:h-9 sl:h-11 md:h-16" />
+          </Link>
           <nav className="hidden sl:flex items-center justify-center col-span-2">
             <ul className="flex gap-3">
               {NAVBAR_LINKS.map((link) => (
