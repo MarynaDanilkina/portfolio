@@ -6,6 +6,7 @@ import Typography from "@/react/components/Typography/Typography"
 import { contact } from "@/react/data/contact"
 import { variant } from "@/react/data/variant"
 import emailjs from "@emailjs/browser"
+import { ConfigProvider, notification } from "antd"
 import { easeInOut, motion } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
@@ -18,6 +19,8 @@ interface IValidationSchema {
 }
 
 export default function ConnectionBlock() {
+  const [api, contextHolder] = notification.useNotification()
+
   const [loading, setLoading] = useState(false)
 
   const { control, handleSubmit, reset } = useForm<IValidationSchema>({
@@ -28,21 +31,38 @@ export default function ConnectionBlock() {
     },
   })
 
+  const openNotification = ({
+    title,
+    text,
+  }: {
+    title: string
+    text: string
+  }) => {
+    api.open({
+      message: title,
+      description: text,
+    })
+  }
+
   const onSubmit: SubmitHandler<IValidationSchema> = async (data) => {
     setLoading(true)
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        "service_k101qpv",
+        "template_ohcctsh",
         {
           ...data,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        "0L5_It5s0-5Ujf69L"
       )
       .then(
         () => {
           setLoading(false)
+          openNotification({
+            title: "Thank you!",
+            text: "Your application has been received and is currently being reviewed and you will be contacted.",
+          })
           reset({
             name: "",
             email: "",
@@ -51,6 +71,7 @@ export default function ConnectionBlock() {
         },
         (error) => {
           setLoading(false)
+          openNotification({ title: "Error", text: "An error has occurred" })
           console.error(error)
         }
       )
@@ -123,6 +144,16 @@ export default function ConnectionBlock() {
           ))}
         </div>
       </motion.div>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorBgElevated: "#366977",
+            colorText: "#fff",
+            colorIcon: "#fff",
+          },
+        }}>
+        {contextHolder}
+      </ConfigProvider>
     </div>
   )
 }

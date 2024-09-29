@@ -15,7 +15,7 @@ Stack: React, react-dnd, react-hook-form, react-i18next, react-redux, sass)`,
     id: 1,
     title: "Frontend developer",
     company: "SagTech",
-    date: "January 2023 - May 2024",
+    date: "January 2023 - March 2024",
     text: `Worked on two projects: B2T and SagTech website
 B2T (stack: Next.js, TypeScript, Tailwind, Redux Toolkit, Swiper.js)<br/>
 - Developed the client part of the application from scratch.<br/>
@@ -39,18 +39,10 @@ apexcharts, swiper, zod)<br/>
     id: 2,
     title: "Frontend developer",
     company: "WebLab",
-    date: "may 2024 - Present",
-    text: `Worked on two projects: B2T and SagTech website
-B2T (stack: Next.js, TypeScript, Tailwind, Redux Toolkit, Swiper.js)<br/>
-- Developed the client part of the application from scratch.<br/>
-- Implemented TypeScript, reducing the number of errors and improving code readability.<br/>
-- Achieved a Pixel Perfect accuracy of 98%, ensuring an exact match of the HTML template with the original
-layout.<br/>
-- Implemented Swiper for hardware acceleration of animation, improving the user interface by 3 times.<br/>
-- Implemented redux storage, reducing code duplication and improving application state management.<br/>
-- Used Tailwind CSS to effectively work with classes and improve the organization of styles.<br/>
-SagTech (stack: Next.js, Remix.run, TypeScript, Tailwind, GraphQL, Apollo Client, framer-motion, react-hook-form,
-apexcharts, swiper, zod)
+    date: "March 2024 - Present",
+    text: `- Developed web applications using React with Redux Toolkit, TypeScript, Tailwind CSS, and Zustand, from prototype to finished product with a responsive interface.<br/>
+- Integrated external interfaces with internal services, followed REST API principles, and actively collaborated with the development team, from designers to QA engineers.<br/>
+- Created an authorization system and a user dashboard with an interface for managing personal data and settings. This improved the user experience, simplified access to key features, and enhanced interaction with internal systems.
 `,
   },
 ]

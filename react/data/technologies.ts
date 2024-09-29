@@ -7,7 +7,6 @@ export const technologies = [
     id: 2,
     name: "React",
   },
-
   {
     id: 3,
     name: "Next.js",
@@ -79,5 +78,49 @@ export const technologies = [
   {
     id: 20,
     name: "framer-motion",
+  },
+  {
+    id: 21,
+    name: "JavaScript",
+  },
+  {
+    id: 22,
+    name: "Zustand",
+  },
+  {
+    id: 23,
+    name: "Git",
+  },
+  {
+    id: 24,
+    name: "GitHub",
+  },
+  {
+    id: 25,
+    name: "Storybook",
+  },
+  {
+    id: 26,
+    name: "REST API",
+  },
+  {
+    id: 26,
+    name: "Jest",
+  },
+  {
+    id: 27,
+    name: "mjml",
+  },
+  {
+    id: 28,
+    name: "Vite",
+  },
+  {
+    id: 29,
+    name: "cookie",
+  },
+  {
+    id: 30,
+    name: "antd",
   },
 ]
