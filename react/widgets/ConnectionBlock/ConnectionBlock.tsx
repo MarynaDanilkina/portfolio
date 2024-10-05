@@ -6,7 +6,7 @@ import Typography from "@/react/components/Typography/Typography"
 import { contact } from "@/react/data/contact"
 import { variant } from "@/react/data/variant"
 import emailjs from "@emailjs/browser"
-import { ConfigProvider, notification } from "antd"
+import { ConfigProvider, notification } from "antd/lib"
 import { easeInOut, motion } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
@@ -85,7 +85,7 @@ export default function ConnectionBlock() {
         className="absolute bg-number-gradient top-[84px] xs:top-[75px] sm:top-10 sl:top-[76px] md:top-14 left-3 xs:left-9 sm:left-12 sl:left-24 md:left-[120px]">
         05
       </Typography>
-      <div className="flex flex-col gap-2 z-[1]">
+      <div className="flex flex-col gap-2 z-[1]" id="contact">
         <Tagline text="Contact" />
         <Typography tag="h3">Get in touch</Typography>
       </div>

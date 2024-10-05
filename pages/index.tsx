@@ -4,6 +4,7 @@ import AboutBlock from "@/react/widgets/AboutBlock/AboutBlock"
 import ConnectionBlock from "@/react/widgets/ConnectionBlock/ConnectionBlock"
 import ExperienceBlock from "@/react/widgets/ExperienceBlock/ExperienceBlock"
 import MainBlock from "@/react/widgets/MainBlock/MainBlock"
+import ProjectsBlock from "@/react/widgets/ProjectsBlock/ProjectsBlock"
 import TechnologiesBlock from "@/react/widgets/TechnologiesBlock/TechnologiesBlock"
 import classNames from "classnames"
 import { Acme, ADLaM_Display, Manrope } from "next/font/google"
@@ -47,6 +48,7 @@ export default function Home() {
         <AboutBlock />
         <TechnologiesBlock />
         <ExperienceBlock />
+        <ProjectsBlock />
         <ConnectionBlock />
       </main>
       <Footer />

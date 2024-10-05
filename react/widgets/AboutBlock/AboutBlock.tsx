@@ -12,7 +12,7 @@ export default function AboutBlock() {
         className="absolute bg-number-gradient -top-7 xs:-top-12 sm:-top-20 sl:top-[76px] md:top-14 left-3 xs:left-9 sm:left-12 sl:left-24 md:left-[120px]">
         01
       </Typography>
-      <div className="flex flex-col gap-2 z-[1]">
+      <div className="flex flex-col gap-2 z-[1]" id="about">
         <Tagline text="Introduction" />
         <Typography tag="h3">About me</Typography>
       </div>

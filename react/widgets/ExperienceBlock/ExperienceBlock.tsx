@@ -15,7 +15,7 @@ export default function ExperienceBlock() {
         className="absolute bg-number-gradient top-[84px] xs:top-[75px] sm:top-10 sl:top-[76px] md:top-14 left-3 xs:left-9 sm:left-12 sl:left-24 md:left-[120px]">
         03
       </Typography>
-      <div className="flex flex-col gap-2 z-[1]">
+      <div className="flex flex-col gap-2 z-[1]" id="work">
         <Tagline text="What I have" />
         <Typography tag="h3">Work Experience</Typography>
       </div>

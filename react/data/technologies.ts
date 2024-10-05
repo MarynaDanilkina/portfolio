@@ -104,23 +104,23 @@ export const technologies = [
     name: "REST API",
   },
   {
-    id: 26,
+    id: 27,
     name: "Jest",
   },
   {
-    id: 27,
+    id: 28,
     name: "mjml",
   },
   {
-    id: 28,
+    id: 29,
     name: "Vite",
   },
   {
-    id: 29,
+    id: 30,
     name: "cookie",
   },
   {
-    id: 30,
+    id: 31,
     name: "antd",
   },
 ]

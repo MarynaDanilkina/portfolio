@@ -28,6 +28,7 @@ const config: Config = {
         sl: "990px",
         sll: "1170px",
         md: "1440px",
+        xmd: "1700px",
       },
       backgroundImage: {
         "custom-gradient": "linear-gradient(135deg, #0b1d26, transparent 87%)",
