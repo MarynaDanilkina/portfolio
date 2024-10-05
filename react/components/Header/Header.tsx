@@ -96,10 +96,14 @@ export default function Header() {
             </ul>
           </nav>
           <div className="hidden sl:flex items-center justify-end">
-            <button className="flex gap-1 items-center">
+            <Link
+              href={"/MarynaDanilkina_Frontend.pdf"}
+              className="flex gap-1 items-center"
+              download
+              target="_blank">
               <Typography tag="h5">Download CV</Typography>
               <Download />
-            </button>
+            </Link>
           </div>
           <div className="flex items-center justify-end sl:hidden">
             <HeaderBurger isOpen={open} onToggle={getOpen} />
